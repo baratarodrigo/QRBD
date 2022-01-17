@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>QR BD</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Login</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Email" id="txtEmail" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" id="txtPass" />
+            </div>
+            <input type="button" value="Login" class="btn solid" id="btn" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Informações</h3>
+            <p>
+              Faça Login com os dados criados na aplicação mobile!
+            </p>
+          </div>
+          <img src="img/log.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+		apiKey: "AIzaSyBaSdpYnaS7FRs5mLhxX_y7p46lU1D8x_0",
+		authDomain: "qr-generator-fbd48.firebaseapp.com",
+		databaseURL: "https://qr-generator-fbd48.firebaseio.com",
+		projectId: "qr-generator-fbd48",
+		storageBucket: "qr-generator-fbd48.appspot.com",
+		messagingSenderId: "1025560005222",
+		appId: "1:1025560005222:web:357017409aef46221a3ba7"
+	};
+	// Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  </script>
+    <script src="../js/app.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: OverpassMono-Regular
+font link: https://fonts.google.com/specimen/Overpass+Mono
+font author: Delve Withrington
+font author site: https://www.delvefonts.com/
+
+
+icon designer: Kelig Le Luron
+icon designer link: /kelig
+        
+{"bg-gradient-0":"#30223A","bg-gradient-1":"#F13800","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
+      

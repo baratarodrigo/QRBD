@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QR Generator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cont">
+    <div class="form sign-in">
+      <h2>Login</h2>
+      <label>
+        <span>Endereço de Email</span>
+        <input type="email" name="email" id="txtem">
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" name="password" id="txtpw">
+      </label>
+      <button class="submit" type="button" id="login">Login</button>
+      <p class="forgot-pass">Esqueceu-se da Password?</p>
+    </div>
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h2>Registar?</h2>
+          <p>Registe-se e comece a trabalhar</p>
+        </div>
+        <div class="img-text m-in">
+          <h2>login?</h2>
+          <p>Se já tem uma conta faça Login</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-up">Registar</span>
+          <span class="m-in">Login</span>
+        </div>
+      </div>
+      <div class="form sign-up">
+        <h2>Registar</h2>
+        <label>
+          <span>Email</span>
+          <input type="text" id="txtemail">
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" id="txtpass">
+        </label>
+        <label>
+          <span>Confirm Password</span>
+          <input type="password" id="txtconfpass">
+        </label>
+        <button type="button" class="submit" id="btnRegistar">Registar</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-modal">
+    <div class="modal-content">
+      <div class="close">+</div>
+      <img src="../img/icons8-admin-settings-male-64.png" alt="" class="img_popup">      
+      <label>
+        <span>UserName</span>
+        <input type="text" id="txtpop">
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" id="passpop">
+      </label>
+      <button type="button" class="submit" id="btnpop">Administrador</button>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  
+  <script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+		apiKey: "AIzaSyBaSdpYnaS7FRs5mLhxX_y7p46lU1D8x_0",
+		authDomain: "qr-generator-fbd48.firebaseapp.com",
+		databaseURL: "https://qr-generator-fbd48.firebaseio.com",
+		projectId: "qr-generator-fbd48",
+		storageBucket: "qr-generator-fbd48.appspot.com",
+		messagingSenderId: "1025560005222",
+		appId: "1:1025560005222:web:357017409aef46221a3ba7"
+	};
+	// Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  </script>
+  <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

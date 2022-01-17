@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QR Generator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/QrCode.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+</head>
+<body>
+  <div class="cont">
+    <div class="form sign-in">  
+        <h2>Criar QRCode</h2>
+      <label>
+            <span>Nome</span>
+            <input type="text" name="nome" id="nome">
+      </label>
+        <label>
+            <span>Email</span>
+            <input type="email" name="email" id="email">
+        </label>
+        <label>
+            <span>Nº Telefone</span>
+            <input type="text" onkeypress="isInputNumber(evente)" name="telefone" id="tel">
+        </label>
+            <button class="submit" type="button" id="criar">Criar Qr Code</button>
+    </div>
+    <div class="sub-cont">
+        <div class="wrap_mobile">
+            <div class="mobile">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="screen">
+                    <div class="wrap_screen">
+                        <div class="wrap_qr">
+                            <div id="qrcode"></div>
+                        </div>
+                        <button class="email">Enviar Email</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+  </div>
+  
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="../js/qrcode.min.js"></script>
+<script src="../js/QRCode.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QR Generator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/email.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+  <script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+		apiKey: "AIzaSyBaSdpYnaS7FRs5mLhxX_y7p46lU1D8x_0",
+		authDomain: "qr-generator-fbd48.firebaseapp.com",
+		databaseURL: "https://qr-generator-fbd48.firebaseio.com",
+		projectId: "qr-generator-fbd48",
+		storageBucket: "qr-generator-fbd48.appspot.com",
+		messagingSenderId: "1025560005222",
+		appId: "1:1025560005222:web:357017409aef46221a3ba7"
+	};
+	// Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  </script>
+</head>
+<body>
+  <div class="cont">
+    <div class="wrap_cont">
+      <div class="topo"></div>
+      <div class="para">
+        <p>Para:</p>
+        <input type="text" id="para">
+      </div>
+      <div class="para">
+        <p>CC:</p>
+        <input type="text" id="cc">
+      </div>
+      <div class="para">
+        <p>Assunto:</p>
+        <input type="text" class="ass" id="ass">
+      </div>
+      <div class="textarea">
+        <div class="text" >
+          <textarea name=""  cols="30" rows="10" id="txt" ></textarea>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="../js/email.js"></script>
+</body>
+</html>

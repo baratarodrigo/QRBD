@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/table.css" />
+    <title>QR BD</title>
+</head>
+<body>
+    <div class="box">
+        <div class="wrap_table">
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th> 
+                        <th>Email</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+
+                </tbody>
+                
+            </table>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+		apiKey: "AIzaSyBaSdpYnaS7FRs5mLhxX_y7p46lU1D8x_0",
+		authDomain: "qr-generator-fbd48.firebaseapp.com",
+		projectId: "qr-generator-fbd48",
+	};
+	// Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore();
+  
+  
+  </script>
+  <script src="../js/table.js"></script>
+</body>
+</html>
